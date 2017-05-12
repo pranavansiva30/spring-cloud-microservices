@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: say-bye
+
+server:
+  port: 9092
