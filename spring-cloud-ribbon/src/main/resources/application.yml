@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: spring-cloud-ribbon
+
+server:
+  port: 8888
+  
+
+say-hello:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:8091,localhost:9093
+    ServerListRefreshInterval: 15000
+
+say-bye:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:8092,localhost:9092
+    ServerListRefreshInterval: 15000
