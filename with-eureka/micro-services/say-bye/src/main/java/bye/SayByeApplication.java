@@ -2,6 +2,7 @@ package bye;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.slf4j.Logger;
@@ -11,6 +12,7 @@ import java.util.*;
 
 @RestController
 @SpringBootApplication
+@EnableDiscoveryClient
 public class SayByeApplication {
 
   private static Logger log = LoggerFactory.getLogger(SayByeApplication.class);
