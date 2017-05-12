@@ -15,4 +15,3 @@ bin
 target-ide/
 *.project
 .classpath
-Servers/
